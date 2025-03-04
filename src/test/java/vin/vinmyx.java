@@ -9,9 +9,9 @@ public class vinmyx {
 
 	public static void main(String[] args) {
 WebDriver driver=new ChromeDriver();
-driver.get("https//practice.expandtesting.com/login");
-WebElement user=driver.findElement(By.id("username"));
-WebElement pass=driver.findElement(By.id("pass"));
+driver.get("https://practice.expandtesting.com/login#google_vignette");
+WebElement user=driver.findElement(By.id("//input[@name='username']"));
+WebElement pass=driver.findElement(By.xpath("//input[@name='password']"));
 user.sendKeys("kalyani@gmail.com");
 user.sendKeys("12345678");
 driver.findElement(By.xpath("//button[@type='submit']")).click();
